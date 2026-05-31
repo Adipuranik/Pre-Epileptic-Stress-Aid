@@ -1,10 +1,10 @@
-# ⚡ Pre-Epileptic Stress Aid
+#  Pre-Epileptic Stress Aid
 
 An Arduino-based real-time monitoring system for early detection of epileptic stress indicators using temperature, humidity, and vibration sensors — with sub-second alert response via interrupt-driven architecture.
 
 ---
 
-## 🔧 Hardware Used
+##  Hardware Used
 
 | Component | Specification |
 |-----------|--------------|
@@ -17,7 +17,7 @@ An Arduino-based real-time monitoring system for early detection of epileptic st
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 pre-epileptic-stress-aid/
@@ -29,14 +29,13 @@ pre-epileptic-stress-aid/
 │   ├── circuit_diagram.md     # Wiring and pin connections
 │   └── components_list.md     # Bill of materials
 ├── docs/
-│   └── working_principle.md   # Threshold logic and design decisions
-├── images/                    # Photos of hardware setup
-└── README.md
+    └── working_principle.md   # Threshold logic and design decisions
+
 ```
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 1. DHT11 continuously reads body-ambient **temperature and humidity**
 2. SW-420 vibration sensor is wired to an **interrupt pin (INT0 / D2)** on the Arduino
@@ -47,7 +46,7 @@ pre-epileptic-stress-aid/
 
 ---
 
-## 🎯 Alert Logic
+##  Alert Logic
 
 ```
 Stress Event triggered when:
@@ -60,7 +59,7 @@ Thresholds are `#define` constants — easy to tune for specific use cases.
 
 ---
 
-## 🗂️ Features
+##  Features
 
 - **Interrupt-driven vibration detection** — ISR response, not polling
 - **Multi-sensor fusion** — combines motion + temperature + humidity
@@ -85,7 +84,7 @@ Thresholds are `#define` constants — easy to tune for specific use cases.
 
 ---
 
-## 💻 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Arduino IDE 1.8.x or 2.x
@@ -117,7 +116,7 @@ git clone https://github.com/Adipuranik/pre-epileptic-stress-aid.git
 
 ---
 
-## 🧠 Key Concepts Demonstrated
+##  Key Concepts Demonstrated
 
 - GPIO interrupt handling (INT0 external interrupt)
 - ADC-based analog sensor reading
@@ -128,25 +127,19 @@ git clone https://github.com/Adipuranik/pre-epileptic-stress-aid.git
 
 ---
 
-## 📸 Demo
-
-> *Add photos of your hardware setup and Serial Monitor screenshots here*
-
----
-
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This is an academic prototype for demonstration purposes only. It is **not a certified medical device** and should not be used for clinical diagnosis or patient monitoring.
 
 ---
 
-## 📄 License
+##  License
 
 MIT License — free to use, modify, and distribute with attribution.
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Aditi S Puranik**  
 B.E. Electronics & Communication Engineering  
