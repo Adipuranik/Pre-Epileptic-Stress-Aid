@@ -1,0 +1,15 @@
+# Arduino build artifacts
+*.elf
+*.bin
+*.hex
+*.map
+build/
+.arduino15/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+*.code-workspace
